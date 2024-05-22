@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const urlForDomain = `http://xtv.ooo:8080/live/zubair9798/zubair9799/${id}.m3u8`;
+  const urlForDomain = `http://xtv.ooo:8080/live/739387778/638388588/${id}.m3u8`;
 
   try {
     const responseForDomain = await axios.get(urlForDomain, {
@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
       const locationUrl = responseForDomain.headers.location;
       const domain = new URL(locationUrl).hostname;
 
-      const urlForM3u8 = `http://xtv.ooo:8080/live/zubair9798/zubair9799/${id}.m3u8`;
+      const urlForM3u8 = `http://xtv.ooo:8080/live/739387778/638388588/${id}.m3u8`;
 
       const responseForM3u8 = await axios.get(urlForM3u8, {
         headers: {
